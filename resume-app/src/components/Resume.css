@@ -1,0 +1,133 @@
+/* Container */
+.resume {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 25px 40px;
+  background: linear-gradient(135deg, #ffffff, #f0f8ff);
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #2c3e50;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #1a1a1a;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 32px;
+  color: #34495e;
+  background: linear-gradient(to right, #0077b5, #00bfff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+header p {
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+header p a {
+  color: #0077b5;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+header p a:hover {
+  color: #00bfff;
+}
+
+/* Section Titles */
+h2 {
+  color: #2c3e50;
+  font-size: 22px;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #00bfff;
+}
+
+/* Lists */
+ul, ol {
+  margin-left: 25px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* Skills Bars */
+.skill-bar {
+  margin-bottom: 10px;
+}
+
+.skill-bar span {
+  font-weight: bold;
+}
+
+.bar {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.fill {
+  height: 15px;
+  background: linear-gradient(to right, #0077b5, #00bfff);
+  width: 0;
+  animation: fillSkill 1s forwards;
+}
+
+@keyframes fillSkill {
+  to { width: 80%; } /* Example width, adjust for each skill */
+}
+
+/* Projects Hover Effect */
+ul li:hover {
+  background-color: rgba(0, 191, 255, 0.1);
+  padding: 5px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+/* Hobbies */
+section:last-child p {
+  font-style: italic;
+  color: #0077b5;
+}
+
+/* Buttons (for Download Resume) */
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(to right, #0077b5, #00bfff);
+  color: #fff;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background: linear-gradient(to right, #00bfff, #0077b5);
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .resume {
+    padding: 20px;
+  }
+  header h1 {
+    font-size: 26px;
+  }
+}

@@ -1,0 +1,33 @@
+/* Light Theme */
+body.light {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --btn-bg: #007bff;
+  --btn-text: #ffffff;
+}
+
+/* Dark Theme */
+body.dark {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --btn-bg: #ff9800;
+  --btn-text: #000000;
+}
+
+/* Apply variables globally */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: all 0.3s ease-in-out;
+  font-family: Arial, sans-serif;
+}
+
+button {
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 20px;
+}
